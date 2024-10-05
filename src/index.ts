@@ -2,5 +2,5 @@
 let heavyMetalBands = ['Judas Priest', 'Slayer', 'Velho', 'Bathory']
 
 for (const band of heavyMetalBands) {
-        console.log(band)
+  console.log(band)
 }
