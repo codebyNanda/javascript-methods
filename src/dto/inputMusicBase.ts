@@ -5,3 +5,11 @@ export interface InputMusicBase {
   knownFor?: string
   dateOfBirth?: number
 }
+
+export interface InputMusicianBase {
+  dateOfBirth: number
+  albumsInPartnership: string[]
+  occupation: string[]
+  knownFor?: string
+  death?: boolean
+}

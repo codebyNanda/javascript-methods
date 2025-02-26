@@ -1,25 +1,25 @@
-import { InputMusicBase } from "../dto/inputMusicBase"
+import { InputMusicBase, InputMusicianBase } from "../dto/inputMusicBase"
 import { MusicBase } from "./musicBase"
+import { MusisianBase } from "./musicianBase"
 
-export class Singer extends MusicBase {
-  bandsHasSungIn: string[]
-  albumsInPartnership: string[]
-  occupation: string[]
-  death?: boolean 
-
+export class Singer extends MusisianBase {
+  private _bandsHasSungIn: string[]
+ 
   constructor(
     inputBase: InputMusicBase,
+    inputMusicianBase: InputMusicianBase,
     bandsHasSungIn: string[],
-    albumsInPartnership: string[],
-    occupation: string[],
-    death?: boolean
   ) {
-    super(inputBase)
+    super(inputBase, inputMusicianBase)
 
-    this.bandsHasSungIn = bandsHasSungIn
-    this.albumsInPartnership = albumsInPartnership
-    this.occupation = occupation
-    this.death = death
+    this._bandsHasSungIn = bandsHasSungIn
+  }
+
+  public get bandsHasSungIn(): string[] {
+    return this._bandsHasSungIn
+  }
+  public set bandsHasSungIn(value: string[]) {
+    this._bandsHasSungIn = value
   }
 
   compositions(): void {
