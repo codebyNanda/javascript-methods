@@ -1,6 +1,3 @@
-// Classes 
-
-
 // INTERFACES
 interface IArtist {
   sing: () => void

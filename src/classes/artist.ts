@@ -1,7 +1,7 @@
 import { InputMusicBase } from "../dto/inputMusicBase"
 import { MusicBase } from "./musicBase"
 
-export class BandAndArtist extends MusicBase {
+export class Artist extends MusicBase {
   private _numberOfAlbuns: number
   private _website: string
   private _status: boolean
@@ -60,7 +60,7 @@ export class BandAndArtist extends MusicBase {
     this._yearOfFundation = value
   }
 
-  
+
   addAlbum(album: IAlbum) {
     console.log("Adicionando álbum...", album)
   }

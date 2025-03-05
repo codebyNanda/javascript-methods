@@ -4,7 +4,6 @@ import { MusicBase } from "./musicBase"
 export class Albums extends MusicBase {
   nameofAlbum: string
   year: number
-  genre: string
   numberOfTracks: number
   recordLabel: string
 
@@ -12,14 +11,12 @@ export class Albums extends MusicBase {
     inputBase: InputMusicBase,
     nameofAlbum: string,
     year: number,
-    genre: string,
     numberOfTracks: number,
     recordLabel: string
   ) {
       super(inputBase)
       this.nameofAlbum = nameofAlbum
       this.year = year
-      this.genre = genre
       this.numberOfTracks = numberOfTracks
       this.recordLabel = recordLabel
     }

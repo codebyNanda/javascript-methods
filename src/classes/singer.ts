@@ -1,8 +1,7 @@
 import { InputMusicBase, InputMusicianBase } from "../dto/inputMusicBase"
-import { MusicBase } from "./musicBase"
-import { MusisianBase } from "./musicianBase"
+import { MusicianBase } from "./musicianBase"
 
-export class Singer extends MusisianBase {
+export class Singer extends MusicianBase {
   private _bandsHasSungIn: string[]
  
   constructor(
