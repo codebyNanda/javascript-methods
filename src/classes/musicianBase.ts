@@ -2,10 +2,10 @@ import { InputMusicBase, InputMusicianBase } from "../dto/inputMusicBase"
 import { MusicBase } from "./musicBase"
 
 export abstract class MusicianBase extends MusicBase {
-  private _dateOfBirth: number
+  // private _dateOfBirth: number
   private _albumsInPartnership: string[]
   private _occupation: string[]
-  private _knownFor?: string | undefined
+  // private _knownFor?: string | undefined
   private _death?: boolean | undefined
   
   constructor(
@@ -13,19 +13,19 @@ export abstract class MusicianBase extends MusicBase {
     inputMusicianBase: InputMusicianBase
     ) {
       super(inputBase)
-      this._dateOfBirth = inputMusicianBase.dateOfBirth
+      // this._dateOfBirth = inputMusicianBase.dateOfBirth
       this._albumsInPartnership = inputMusicianBase.albumsInPartnership
       this._occupation = inputMusicianBase.occupation
-      this._knownFor = inputMusicianBase.knownFor
+      // this._knownFor = inputMusicianBase.knownFor
       this._death = inputMusicianBase.death
   } 
 
-  protected get dateOfBirth(): number {
-    return this._dateOfBirth
-  }
-  protected set dateOfBirth(value: number) {
-    this._dateOfBirth = value
-  }
+  // protected get dateOfBirth(): number {
+  //   return this._dateOfBirth
+  // }
+  // protected set dateOfBirth(value: number) {
+  //   this._dateOfBirth = value
+  // }
 
   protected get albumsInPartnership(): string[] {
     return this._albumsInPartnership
@@ -41,12 +41,12 @@ export abstract class MusicianBase extends MusicBase {
     this._occupation = value
   }
 
-  protected get knownFor(): string | undefined {
-    return this._knownFor
-  }
-  protected set knownFor(value: string | undefined) {
-    this._knownFor = value
-  }
+  // protected get knownFor(): string | undefined {
+  //   return this._knownFor
+  // }
+  // protected set knownFor(value: string | undefined) {
+  //   this._knownFor = value
+  // }
 
   protected get death(): boolean | undefined {
     return this._death

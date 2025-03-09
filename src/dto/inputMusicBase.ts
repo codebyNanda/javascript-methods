@@ -3,13 +3,13 @@ export interface InputMusicBase {
   genre: string
   country: string
   knownFor?: string
-  dateOfBirth?: number
+  // dateOfBirth?: string
 }
 
 export interface InputMusicianBase {
-  dateOfBirth: number
+  // dateOfBirth: string
   albumsInPartnership: string[]
   occupation: string[]
-  knownFor?: string
+  // knownFor?: string
   death?: boolean
 }

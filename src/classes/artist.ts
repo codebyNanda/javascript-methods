@@ -6,7 +6,7 @@ export class Artist extends MusicBase {
   private _website: string
   private _status: boolean
   private _recordLabels: string[]
-  private _yearOfFundation?: number | undefined
+  // private _yearOfFundation?: number | undefined
 
   constructor(
     inputBase: InputMusicBase,
@@ -22,7 +22,7 @@ export class Artist extends MusicBase {
     this._website = website
     this._status = status
     this._recordLabels = recordLabels
-    this._yearOfFundation = yearOfFundation
+    // this._yearOfFundation = yearOfFundation
   }
 
   public get numberOfAlbuns(): number {
@@ -53,17 +53,17 @@ export class Artist extends MusicBase {
     this._recordLabels = value
   }
 
-  public get yearOfFundation(): number | undefined {
-    return this._yearOfFundation
-  }
-  public set yearOfFundation(value: number | undefined) {
-    this._yearOfFundation = value
-  }
+  // public get yearOfFundation(): number | undefined {
+  //   return this._yearOfFundation
+  // }
+  // public set yearOfFundation(value: number | undefined) {
+  //   this._yearOfFundation = value
+  // }
 
 
-  addAlbum(album: IAlbum) {
-    console.log("Adicionando álbum...", album)
-  }
+  // addAlbum(album: IAlbum) {
+  //   console.log("Adicionando álbum...", album)
+  // }
 
   addRecordLabel() {
     console.log('Adicionando gravadora :: ')
