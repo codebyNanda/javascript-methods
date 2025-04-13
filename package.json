@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node build/index.js",
-    "dev": "ts-node-dev --ignore-watch node_modules src/index.ts"
+    "start": "node build/cli.js",
+    "dev": "ts-node-dev --ignore-watch node_modules src/cli.ts"
   },
   "author": "Ananda Ferreira",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^12.5.0"
   }
 }

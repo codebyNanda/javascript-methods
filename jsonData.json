@@ -1,57 +1,11 @@
-[
-  {
-    "_name": "Teste",
-    "_genre": "Rock",
-    "_country": "BR",
-    "_numberOfAlbuns": 1,
-    "_website": "grandesucessos.com",
-    "_status": true,
-    "_recordLabels": [
-      "teste"
-    ]
-  },
-  {
-    "_name": "Rob Halford",
-    "_genre": "Heavy Metal",
-    "_country": "UK",
-    "_albumsInPartnership": [
-      "The Wrong Side of Heaven and the Righteous Side of Hell, Volume 1"
-    ],
-    "_occupation": [
-      "Singer"
-    ],
-    "_bandsHasSungIn": [
-      "Halford"
-    ]
-  },
-  {
-    "_name": "Nicko McBrain",
-    "_genre": "Heavy Metal",
-    "_country": "UK",
-    "_albumsInPartnership": [
-      ""
-    ],
-    "_occupation": [
-      "Drummer"
-    ],
-    "_bandsHasPlayedIn": [
-      "Streetwalkers"
-    ]
-  },
-  {
-    "_name": "Dave Mustaine",
-    "_genre": "Thrash Metal",
-    "_country": "United States",
-    "_albumsInPartnership": [
-      ""
-    ],
-    "_occupation": [
-      "Guitarist",
-      "Singer",
-      "Producer"
-    ],
-    "_bandsHasPlayedIn": [
-      "Metallica"
-    ]
-  }
-]
+{
+  "_name": "Teste",
+  "_genre": "Rock",
+  "_country": "BR",
+  "_numberOfAlbuns": 1,
+  "_website": "grandesucessos.com",
+  "_status": true,
+  "_recordLabels": [
+    "teste"
+  ]
+}

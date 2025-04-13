@@ -1,5 +1,4 @@
 import { InputMusicBase, InputMusicianBase } from "../dto/inputMusicBase"
-import { MusicBase } from "./musicBase"
 import { MusicianBase } from "./musicianBase"
 
 export class Drummer extends MusicianBase {
