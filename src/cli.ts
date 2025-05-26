@@ -2,33 +2,42 @@
 import inquirer from "inquirer"
 import { Actions } from './enum/actions'
 import { createArtist } from "./libraryOfArtistsCli/createArtist"
+import { Artist } from "./classes/artist"
 // import { select, Separator } from '@inquirer/prompts'
 
 async function firstCli(): Promise<void> {
   console.log('Bem-vindo ao meu primeiro CLI!')
 
-  inquirer.prompt([
-    {
-      type: 'list',
-      name: 'library',
-      message: 'Escolha o que deseja realizar nesta biblioteca: ',
-      choices: [Actions.CreateArtist, Actions.UpdateArtist],
-    }
-  ])
-  .then(async (answers) => {
-   switch(answers.library) {
-    case Actions.CreateArtist:
-      await createArtist()
-      console.log('Testando criação de artistas')
-      break
-    case Actions.UpdateArtist:
-      console.log('Atualizando artista...')
-      break
-    default:
-      console.log('Opção errada! Por favor tente novamente.')
-   }
-  })
-  .catch((err) => console.log(err))  
+  const artists: Artist[] = [] // Armazena os artistas criados
+  
+  while(true) {
+    await inquirer.prompt([
+      {
+        type: 'list',
+        name: 'library',
+        message: 'Escolha o que deseja realizar nesta biblioteca: ',
+        choices: [Actions.CreateArtist, Actions.UpdateArtist, Actions.GetArtist],
+      }
+    ])
+    .then(async (answers) => {
+      switch(answers.library) {
+        case Actions.CreateArtist:
+          const resultArtist = await createArtist()
+          artists.push(resultArtist)
+          console.log(resultArtist)
+          break
+        case Actions.UpdateArtist:
+          console.log('Atualizando artista...')
+          break
+        case Actions.GetArtist:
+          console.log(artists)
+          break
+        default:
+          console.log('Opção errada! Por favor tente novamente.')
+      }
+    })
+    .catch((err) => console.log(err)) 
+  } 
 }
 firstCli()
 

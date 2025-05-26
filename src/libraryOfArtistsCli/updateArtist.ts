@@ -1,7 +1,17 @@
 import { input } from '@inquirer/prompts'
 import { Artist } from "../classes/artist"
 
-export async function createArtist() {
+export async function updateArtist() {
+
+  const initialInput = await input({ message: 'Digite ' })
+
+  const resultArtist = new Artist({
+    name: inputName,
+    genre: inputGenre,
+    country: inputCountry,
+  },
+    inputRecordLabels
+  ) 
 
   const inputName = await input({ message: 'Informe o nome do artista ou banda que deseja cadastrar: '})
   

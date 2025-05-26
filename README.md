@@ -1,1 +1,1 @@
-Repositório criado para armazenar exemplos utilizando métodos javascript.
+Repositório criado para armazenar meu primeiro CLI. 
